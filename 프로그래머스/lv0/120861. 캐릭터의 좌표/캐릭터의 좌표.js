@@ -8,12 +8,10 @@ function solution(keyinput, board) {
         else if (item === 'up') y++
         else if (item === 'down') y--
         if(Math.abs(x) > boardNum[0]){
-            x < 0 ? x = -boardNum[0] : x = boardNum[0]
-            return
+            x = x < 0 ? -boardNum[0] : boardNum[0]
         } 
         if(Math.abs(y) > boardNum[1]){
-             y < 0 ? y = -boardNum[1] : y = boardNum[1]
-            return    
+             y = y < 0 ? -boardNum[1] : boardNum[1]
         } 
     })
     
